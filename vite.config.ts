@@ -6,10 +6,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import netlifyPlugin from "@netlify/vite-plugin-react-router";
 
 export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [tailwindcss, autoprefixer],
+    css: {
+        postcss: {
+            plugins: [tailwindcss, autoprefixer],
+        },
     },
-  },
-  plugins: [reactRouter(), tsconfigPaths(), netlifyPlugin()],
+    plugins: [reactRouter(), tsconfigPaths(), netlifyPlugin()],
 });
